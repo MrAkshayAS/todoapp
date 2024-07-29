@@ -14,6 +14,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h1 {
 
 form {
     display: flex;
+    gap: 9px;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -31,16 +33,20 @@ input {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 button {
     padding: 10px 15px;
     background-color: #007BFF;
     border: none;
-    border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button i {
+    margin-right: 5px;
 }
 
 button:hover {
@@ -72,6 +78,12 @@ li button {
     color: #fff;
     padding: 5px 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+li button i {
+    margin-right: 0px;
 }
 
 li button:hover {

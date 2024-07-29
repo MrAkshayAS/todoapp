@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         li.textContent = todo.task;
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.innerHTML = '<i class="ri-delete-bin-line"></i>';
         deleteButton.addEventListener('click', () => {
             deleteTodoFromDB(todo.id);
             todoList.removeChild(li);
